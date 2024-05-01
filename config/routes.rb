@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get 'parts', to: 'parts#index'
+  get 'default_parts', to: 'parts#default_index'
+
 end
