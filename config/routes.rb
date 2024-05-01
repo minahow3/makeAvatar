@@ -7,4 +7,10 @@ Rails.application.routes.draw do
   get 'parts', to: 'parts#index'
   get 'default_parts', to: 'parts#default_index'
 
+  namespace :api do
+    namespace :v1 do
+      post 'register_user_with_part_set', to: 'registration#register_user_with_part_set'
+    end
+  end
+
 end
